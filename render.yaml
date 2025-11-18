@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: pocketbase
+    env: docker
+    region: frankfurt
+    plan: free
+    disk:
+      name: data
+      mountPath: /pb_data
+      sizeGB: 1
+    autoDeploy: true
